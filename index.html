@@ -6,17 +6,20 @@
     <title>Personal Branding</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
         }
         header {
-            background: #410b0b;
+            background: linear-gradient(to right, #410b0b, #6a1b1b);
             color: #fff;
-            padding: 1rem 0;
+            padding: 2rem 0;
             text-align: center;
             position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         header img {
             width: 150px;
@@ -25,46 +28,76 @@
             object-fit: cover;
             border: 4px solid #fff;
             margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         header h1 {
             margin: 0;
             font-size: 2.5rem;
+            letter-spacing: 2px;
         }
         header p {
-            margin: 0;
+            margin: 0.5rem 0;
             font-size: 1.2rem;
+            font-weight: 300;
         }
         section {
             padding: 2rem;
             max-width: 1100px;
             margin: auto;
         }
-        .about, .skills, .testimonials, .contact {
+        .about, .skills, .education, .contact {
+            background: #fff;
+            padding: 1.5rem;
             margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         h2 {
             margin-bottom: 1rem;
             color: #410b0b;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #410b0b;
+            display: inline-block;
+            padding-bottom: 0.3rem;
         }
         ul {
             list-style: none;
             padding: 0;
         }
         ul li {
-            background: #f4f4f4;
+            background: #f7f7f7;
             margin: 0.5rem 0;
             padding: 1rem;
             border-left: 4px solid #410b0b;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #410b0b;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         footer {
             text-align: center;
             background: #410b0b;
             color: #fff;
             padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 0.9rem;
         }
-        a {
-            color: #410b0b;
-            text-decoration: none;
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header img {
+                width: 120px;
+                height: 120px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -73,16 +106,26 @@
 <header>
     <img src="440918327_439872192071176_495732743311512805_n.jpg" alt="Profile Picture">
     <h1>Ammar Tamami</h1>
-
+    <p>Mahasiswa Informatika</p>
 </header>
 
 <section class="about">
-    <h2>About Me</h2>
-    <p>Mahasiswa jurusan Informatika yang memiliki minat besar dalam pemrograman, dan teknologi informasi. Mampu belajar dengan cepat, beradaptasi dengan baik terhadap teknologi dan konsep baru, serta memiliki kemampuan analitis dan pemecahan masalah yang kuat. siap berkontribusi dalam tim untuk mencapai tujuan bersama. Termotivasi untuk mengembangkan keterampilan teknis dan profesional dalam lingkungan yang dinamis dan inovatif.</p>
+    <h2>Tentang Saya</h2>
+    <p>Mahasiswa jurusan Informatika yang memiliki minat besar dalam pemrograman dan teknologi informasi. Saya cepat belajar, mudah beradaptasi dengan teknologi dan konsep baru, serta memiliki kemampuan analitis dan pemecahan masalah yang kuat. Saya siap berkontribusi dalam tim untuk mencapai tujuan bersama. Termotivasi untuk mengembangkan keterampilan teknis dan profesional dalam lingkungan yang dinamis dan inovatif.</p>
+</section>
+
+<section class="education">
+    <h2>Riwayat Pendidikan</h2>
+    <ul>
+        <li><strong>SD Negeri Jatiwaringin 7</strong> (2012 - 2018)</li>
+        <li><strong>SMP Negeri 51 Jakarta</strong> (2018 - 2021)</li>
+        <li><strong>SMA Islam As-Syafi'iyah 02</strong> (2021 - 2024) <br> Jurusan: IPA</li>
+        <li><strong>Universitas Teknologi Bandung</strong> (2024 - Sekarang) <br> Jurusan: Informatika</li>
+    </ul>
 </section>
 
 <section class="skills">
-    <h2>kemampuan</h2>
+    <h2>Kemampuan</h2>
     <ul>
         <li>Mampu bekerja dalam tim untuk mencapai tujuan bersama</li>
         <li>Mampu berkolaborasi dengan orang lain dari latar belakang yang berbeda</li>
@@ -97,7 +140,6 @@
     <p>Telepon: <a href="tel:+6283125207131">+62 831-2520-7131</a></p>
     <p>Instagram: <a href="https://instagram.com/ammartamami" target="_blank">@ammartamami</a></p>
 </section>
-
 
 <footer>
     <p>&copy; 2025 Ammar Tamami.</p>
